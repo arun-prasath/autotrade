@@ -1,2 +1,11 @@
 language: java
 install: mvn clean install
+
+addons:
+  sonarcloud:
+    organization: "arun-prasath-github"
+    token:
+      secure: "IE5NSy2MM9VXLXY6+3bw0H/suIiy5H+MjMSjsKvM+J0IYOYtsiphWYkQIuv4HFSS7/s9hFSMuDoF8UTQg/5ELI9CEPu/Yj4MmzomJIFhcfSeoBrD1X3a3kg1fo9+QiAscBOIB2V8dZGrzBDfe8rFPN5ox9BET+TL7D9od0OMXkYkID9Cgm4o7DWTofQnNeAxL/Ob4VcMp7WJgZ66GqlIQAU0KAvkbTjHNr5WXHrKujtfexeo/2ofiqqVi8283Qw7Bdm8xKtlftdQRP+uIzBwc+3CMoYu1VTT0y9L5CwsL+c7wDHija6vim1Vb7DkXgD4rjw+9kiHokPONJAiS5RKJ947zwYRHY0nu0j00bvHZHf0+YhzP4QJKljZ5/27s/ZQdTLOvvmw4bgMwBACsDS7MmmwJ5hDZHbmrAyu/mtsGQWKwMUlLTNkNm5Bs56wflcU2h5SL9iZ9ciRIiKwUgvkLojofD4jSqQx+keJJeBsuaQq0ov0sjmhFW/IJmq/QttQkfJ0K8XhkzBFvniOF5igKOepqYQ01w9dqyEoOFiDGPAxJYgi8dSQrt6FSh6z5OHY5iSjqNkK/k62R6cfhXpfZWMKZfYqecbxkMpLq1rG71YJJb5KSm7GENSnlkwzjYSYfylQy6n+RdInk4r3GFE5fAzduE91TuDUSDfsJ7RWXao="
+
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
