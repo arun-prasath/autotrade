@@ -89,7 +89,7 @@
                         <source>11</source>
                         <target>11</target>
                         <release>11</release>
-                        <executable>javac11</executable>
+                        <executable>javac10</executable>
                         <encoding>UTF-8</encoding>
                     </configuration>
                     <dependencies>
