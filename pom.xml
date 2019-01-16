@@ -86,10 +86,10 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <source>10</source>
-                        <target>10</target>
-                        <release>10</release>
-                        <executable>javac10</executable>
+                        <source>11</source>
+                        <target>11</target>
+                        <release>11</release>
+                        <executable>javac11</executable>
                         <encoding>UTF-8</encoding>
                     </configuration>
                     <dependencies>
